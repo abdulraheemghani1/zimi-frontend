@@ -1,0 +1,117 @@
+/* Footer Container */
+.Footer-div {
+    background-color: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Footer Columns */
+  .footer-main-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff; /* White heading */
+  }
+  
+  .footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bdc3c7; /* Light gray text */
+  }
+  
+  /* Links */
+  .footer-col .links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col .links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col .links a {
+    color: #bdc3c7; /* Light gray links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-col .links a:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  /* Newsletter Form */
+  .footer-col form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .footer-col input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    background-color: #34495e; /* Darker input background */
+    color: #ecf0f1; /* Light text */
+  }
+  
+  .footer-col button {
+    padding: 10px 20px;
+    background-color: #3498db; /* Blue button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-col button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Social Icons */
+  .footer-col .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .footer-col .icons i {
+    font-size: 20px;
+    color: #bdc3c7; /* Light gray icons */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-col .icons i:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Footer-div {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-main-column {
+      width: 100%;
+    }
+  
+    .footer-col form {
+      flex-direction: column;
+    }
+  
+    .footer-col button {
+      width: 100%;
+    }
+  }

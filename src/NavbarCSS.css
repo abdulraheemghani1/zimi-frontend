@@ -1,0 +1,55 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better spacing */
+    margin: 10px; /* Margin to avoid sticking to edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin: 0;
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    color: #333 !important; /* Dark text color */
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 15px !important; /* Small rounded buttons */
+    margin: 0 5px;
+    border-radius: 20px; /* Rounded buttons */
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.3); /* Transparent hover effect */
+    color: #000 !important; /* Darker text on hover */
+  }
+  
+  /* Toggle Button Styling */
+  .navbar-toggle {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggle:focus {
+    box-shadow: none;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .custom-navbar {
+      border-radius: 0; /* Remove rounded corners on mobile */
+      margin: 0;
+    }
+  
+    .nav-link {
+      margin: 5px 0; /* Stack links vertically on mobile */
+    }
+  }

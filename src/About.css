@@ -1,0 +1,100 @@
+/* About Container */
+.about-container {
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  /* Overlay to improve readability */
+  .about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  /* About Content */
+  .about-content {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  /* About Title */
+  .about-title {
+    font-size: 2.5rem;
+    color: #333; /* Dark gray text */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* About Description */
+  .about-description {
+    font-size: 1.1rem;
+    color: #555; /* Medium gray text */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* About Section */
+  .about-section {
+    margin-bottom: 30px;
+  }
+  
+  /* About Subtitle */
+  .about-subtitle {
+    font-size: 1.8rem;
+    color: #333; /* Dark gray text */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498db; /* Blue underline */
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* About Text */
+  .about-text {
+    font-size: 1rem;
+    color: #666; /* Light gray text */
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px 10px;
+    }
+  
+    .about-content {
+      padding: 20px;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .about-description,
+    .about-text {
+      font-size: 0.95rem;
+    }
+  }

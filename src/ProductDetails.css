@@ -1,0 +1,151 @@
+.product-detail-container {
+  padding: 10px; /* Reduced padding for mobile */
+  background-color: #f8f9fa; /* Light background for the container */
+}
+
+.product-images-carousel {
+  max-width: 100%; /* Full width on mobile */
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure rounded corners for the carousel */
+}
+
+.product-carousel-image {
+  height: 500px; /* Reduced height for mobile */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.product-single-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.product-description-container {
+  max-width: 70%; /* Full width on mobile */
+  margin: 0 auto;
+  padding: 0 10px; /* Add some padding for better readability */
+  background-color: #ffffff; /* White background for the description */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  padding: 15px; /* Add padding inside the container */
+}
+
+.product-description {
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 25px; /* Smaller font size for mobile */
+  color: #333333; /* Dark gray for better readability */
+}
+
+.product-actions {
+  margin-top: 20px;
+  flex-direction: column; /* Stack buttons vertically on mobile */
+  gap: 10px; /* Reduce gap between buttons */
+   display :flex ;
+ 
+}
+
+.product-actions .btn {
+  justify-content : center;
+  width: 20%; /* Full-width buttons on mobile */
+  font-size: 16px; /* Slightly larger font size for buttons */
+  border-radius: 8px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Add padding for better touch targets */
+}
+
+.product-actions .btn-outline-secondary {
+  border-color: #6c757d; /* Custom border color */
+  color: #6c757d; /* Custom text color */
+}
+
+.product-actions .btn-outline-secondary:hover {
+  background-color: #6c757d; /* Hover background color */
+  color: #ffffff; /* Hover text color */
+}
+
+.product-actions .btn-success {
+  background-color: #28a745; /* Custom green color */
+  border-color: #28a745; /* Custom border color */
+}
+
+.product-actions .btn-success:hover {
+  background-color: #218838; /* Darker green on hover */
+  border-color: #218838; /* Darker border on hover */
+}
+
+.related-products-carousel {
+  max-width: 100%; /* Full width on mobile */
+  margin: 0 auto;
+  background-color: #ffffff; /* White background for the carousel */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  padding: 15px; /* Add padding inside the carousel */
+}
+
+.related-product-card {
+  width: 90%; /* Slightly smaller cards for mobile */
+  margin: 0 auto;
+  border: none; /* Remove default card border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.related-product-image {
+  height: 150px; /* Reduced height for mobile */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-name {
+  font-size: 30px; /* Smaller title font size for mobile */
+  font-weight: 200;
+  font-style: initial;
+
+  color: #363636; /* Dark gray for better readability */
+
+}
+
+.related-product-title {
+  font-size: 16px; /* Smaller title font size for mobile */
+  color: #202020; /* Dark gray for better readability */
+}
+
+.related-product-price {
+  font-size: 14px; /* Smaller price font size for mobile */
+  color: #28a745; /* Green color for price */
+}
+
+.related-products-heading {
+  font-size: 20px; /* Smaller heading font size for mobile */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #333333; /* Dark gray for better readability */
+  text-align: center;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+  .product-carousel-image {
+    height: 200px; /* Further reduce height for very small screens */
+  }
+
+  .related-product-card {
+    width: 100%; /* Full-width cards for very small screens */
+  }
+
+  .related-product-image {
+    height: 120px; /* Further reduce height for very small screens */
+  }
+
+  .product-actions .btn {
+    font-size: 14px; /* Smaller font size for buttons on very small screens */
+  }
+}
+
+
+
