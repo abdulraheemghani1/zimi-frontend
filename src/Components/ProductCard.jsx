@@ -2,7 +2,7 @@ import PropTypes from "prop-types"; // Import PropTypes
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { Card, Button } from "react-bootstrap"; // Import Bootstrap components
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import "../ProductCard.css"; // Custom CSS for styling
+import "../productCard.css"; // Custom CSS for styling
 
 export default function ProductCard({ _id, name, description, price, image }) {
   const navigate = useNavigate(); // Initialize useNavigate
